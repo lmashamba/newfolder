@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Nghonyi Wellness</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- External Styles -->
+  <link rel="stylesheet" href="../assets.co.site/styles/bootstrap.min.css"/>
+  <link rel="stylesheet" href="../assets.co.site/styles/keen-slider.min.css"/>
+  <link rel="stylesheet" href="../assets.co.site/styles/core512a.css?v=77"/>
+  <link rel="stylesheet" href="../assets.co.site/styles/beauty_store512a.css?v=77"/>
+
+  <!-- Custom Style -->
+  <style>
+    :root {
+      --primary: #EFA349;
+      --background: #FFF5E9;
+      --text-dark: #0e0e0e;
+      --text-light: #fff;
+      --font-title: 'Tenor Sans', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    body {
+      font-family: var(--font-body);
+      margin: 0;
+      background: #f5f1f1;
+      color: var(--text-dark);
+    }
+
+    /* Header */
+    .header {
+      background: var(--primary);
+      color: var(--text-light);
+      padding: 20px 0;
+    }
+
+    .header .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-image {
+      height: 50px;
+      width: auto;
+    }
+
+    .brand-name {
+      font-family: var(--font-title);
+      font-size: 1.8rem;
+      margin-left: 10px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero {
+      background: var(--background);
+    }
+
+    .hero h1 {
+      font-family: var(--font-title);
+      font-size: 2.5rem;
+    }
+
+    .about img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li {
+      margin: 10px 0;
+    }
+
+    /* Contact Form */
+    .contact input, .contact textarea {
+      width: 100%;
+      max-width: 500px;
+      margin: 10px auto;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      display: block;
+    }
+
+    .contact button {
+      background: var(--primary);
+      color: var(--text-light);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary);
+      color: var(--text-light);
+      padding: 20px;
+    }
+
+    .social-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    .social-links a {
+      color: var(--text-light);
+      text-decoration: none;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .header .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .brand-name {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body class="has-animations">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <img class="logo-image" src="https://raw.githubusercontent.com/lmashamba/wellness/refs/heads/main/assets.co.site/styles/screen3.png" alt="Nghonyi Logo">
+        <h4 class="brand-name">Nghonyi Wellness</h4>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Nghonyi Wellness</h1>
+      <p>Discover amazing wellness solutions and enhance your health today!</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>This is a short description of the Nghonyi Wellness company and its mission.</p>
+    <img src="your-image.jpg" alt="About Image">
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <p>Here are some of the wellness services we offer:</p>
+    <ul>
+      <li>Massage Therapy</li>
+      <li>Yoga Classes</li>
+      <li>Nutrition Counseling</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out!</p>
+    <form action="#" method="POST">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required rows="4"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Nghonyi Wellness. All rights reserved.</p>
+    <ul class="social-links">
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
